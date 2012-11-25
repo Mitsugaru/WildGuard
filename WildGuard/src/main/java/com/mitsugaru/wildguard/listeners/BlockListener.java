@@ -1,8 +1,6 @@
 package com.mitsugaru.wildguard.listeners;
 
-import java.util.List;
-import java.util.Set;
-
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -53,6 +51,7 @@ public class BlockListener implements Listener {
       }
       if(cancel) {
          event.setCancelled(true);
+         player.sendMessage(ChatColor.GRAY + plugin.getTag() + " Wilderness protected.");
       }
    }
 
@@ -83,6 +82,7 @@ public class BlockListener implements Listener {
       }
       if(cancel) {
          event.setCancelled(true);
+         player.sendMessage(ChatColor.GRAY + plugin.getTag() + " Wilderness protected.");
       }
    }
 
