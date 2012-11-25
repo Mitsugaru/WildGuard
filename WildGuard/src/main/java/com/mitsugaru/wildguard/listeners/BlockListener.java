@@ -41,7 +41,12 @@ public class BlockListener implements Listener {
       } else if(!isWilderness(block.getLocation())) {
          return;
       }
-      final String id = block.getTypeId() + "." + block.getData();
+      String id = "";
+      if(block.getData() == 0) {
+         id = "" + block.getTypeId();
+      } else {
+         id = block.getTypeId() + "." + block.getData();
+      }
       final boolean whitelist = plugin.getRootConfig().getBoolean(RootNode.PROTECTION_PLACE_WHITELIST);
       boolean cancel = false;
       if(whitelist) {
@@ -72,7 +77,12 @@ public class BlockListener implements Listener {
       } else if(!isWilderness(block.getLocation())) {
          return;
       }
-      final String id = block.getTypeId() + "." + block.getData();
+      String id = "";
+      if(block.getData() == 0) {
+         id = "" + block.getTypeId();
+      } else {
+         id = block.getTypeId() + "." + block.getData();
+      }
       final boolean whitelist = plugin.getRootConfig().getBoolean(RootNode.PROTECTION_BREAK_WHITELIST);
       boolean cancel = false;
       if(whitelist) {
