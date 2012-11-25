@@ -10,6 +10,8 @@ public class RootConfig extends ModularConfig<WildGuard> {
 
    public RootConfig(WildGuard plugin) {
       super(plugin);
+      loadDefaults(plugin.getConfig());
+      save();
    }
 
    @Override
