@@ -7,7 +7,7 @@ public enum RootNode implements ConfigNode {
     * Protection
     */
    PROTECTION_PLACE_WHITELIST("protection.place.useAsWhitelist", VarType.BOOLEAN, false),
-   PROTECTION_BREAK_WHITELIST("protection.bread.useAsWhitelist", VarType.BOOLEAN, false),
+   PROTECTION_BREAK_WHITELIST("protection.break.useAsWhitelist", VarType.BOOLEAN, false),
    /**
     * Version.
     */
