@@ -12,6 +12,7 @@ public class RootConfig extends ModularConfig<WildGuard> {
       super(plugin);
       loadDefaults(plugin.getConfig());
       save();
+      loadSettings(plugin.getConfig());
    }
 
    @Override
@@ -27,6 +28,7 @@ public class RootConfig extends ModularConfig<WildGuard> {
    @Override
    public void reload() {
       plugin.reloadConfig();
+      loadSettings(plugin.getConfig());
    }
 
    @Override
