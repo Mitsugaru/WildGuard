@@ -1,0 +1,22 @@
+name: WildGuard
+main: com.mitsugaru.wildguard.WildGuard
+version: 0.01
+authors:
+ - Mitsugaru
+depend: [Factions]
+
+commands:
+    wildguard:
+        description: Root command.
+        usage: /<command>
+        
+permissions:
+    WildGuard.enforce:
+        description: Enforce the protection rules.
+        default: false
+    WildGuard.ignore:
+        description: Ignore protection rules.
+        default: false
+    WildGuard.admin:
+        description: Reload config.
+        default: op
