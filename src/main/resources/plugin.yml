@@ -1,6 +1,6 @@
-name: WildGuard
-main: com.mitsugaru.wildguard.WildGuard
-version: 0.01
+name: ${project.artifactId}
+main: ${project.mainclass}
+version: ${project.version}
 authors:
  - Mitsugaru
 depend: [Factions]
